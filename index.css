@@ -192,3 +192,8 @@ html {
         font-size: 12px; /* Further adjust font size for buttons */
     }
 }
+
+.footer{
+  background-color: #333;
+  color: #ffffff;
+}
