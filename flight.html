@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="flight.css">
+    <title>CEMT Travels</title>
+</head>
+<body>
+    
+    <!-- NAVBAR -->
+    <div class="Navbardiv">
+        <div class="Navimg"><img src="cemtlogo.png" alt="cemtlogo" /></div>
+        <ul class="Navbar">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="flight.html">Flight</a></li>
+          <li><a href="activities.html">Activities</a></li>
+          <li><a href="tours.html">Tours</a></li>
+        </ul>
+        <div class="Navdropdown">
+          <select name="cars" id="cars">
+            <option value="signup">Sign up</option>
+            <option value="login">Login</option>
+            <option value="contact">Contact</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- ticket booking -->
+       <div class="flight">
+    <div class="flight-container">
+        <h1 style="text-align: center;">Flight Booking</h1>
+        <div class="flightbook1">
+            <label for="from">From:</label>
+            <input type="text" id="from" placeholder="Enter departure city">
+            <span class="arrow-icon">➔</span>
+            <label for="to">To:</label>
+            <input type="text" id="to" placeholder="Enter destination">
+        </div>
+        <div class="flightbook2">
+            <label for="adult">No of Adults:</label>
+            <input type="text" id="adult" placeholder="e.g., 2">
+            <label for="children">No of Children:</label>
+            <input type="text" id="children" placeholder="e.g., 1">
+        </div>
+        <div class="flightbook3">
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            <label for="nationality">Nationality:</label>
+            <input type="text" id="nationality" placeholder="e.g., Australian">
+        </div>
+        <div class="search">
+            <button>Search Flight</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
