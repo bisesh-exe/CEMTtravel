@@ -6,52 +6,55 @@ html {
   background-color: rgb(255, 251, 230);
 }
 
+/*NAVBAR CSS*/
 .Navbardiv {
-    display: flex;                /* Use flexbox for layout */
-    justify-content: space-between; /* Space between items */
-    align-items: center;         /* Center items vertically */
-    padding: 10px;              /* Add some padding */
-    margin-left: 20px;
-    margin-right: 30px;
-    margin-top: 10px;
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space between items */
+  align-items: center; /* Center items vertically */
+  padding: 10px; /* Add some padding */
+  margin-left: 20px;
+  margin-right: 30px;
+  margin-top: 10px;
 }
 
 .Navimg img {
-    height: 50px;               /* Set a height for the logo */
-    width: auto;                /* Maintain aspect ratio */
+  height: 50px; /* Set a height for the logo */
+  width: auto; /* Maintain aspect ratio */
 }
 
 .Navbar {
-    list-style: none;           /* Remove bullet points */
-    display: flex;              /* Use flexbox for the list */
-    margin: 0;                  /* Remove default margin */
-    padding: 0;                 /* Remove default padding */
-    flex-grow: 1;               /* Allow the navbar to take available space */
-    justify-content: center;     /* Center the items in the navbar */
+  list-style: none; /* Remove bullet points */
+  display: flex; /* Use flexbox for the list */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  flex-grow: 1; /* Allow the navbar to take available space */
+  justify-content: center; /* Center the items in the navbar */
 }
 
 .Navbar li {
-    margin: 0 15px;            /* Add space between list items */
+  margin: 0 15px; /* Add space between list items */
 }
 
 .Navbar a {
-    text-decoration: none;      /* Remove underline from links */
-    color: #333;                /* Dark text color */
-    font-family: Verdana, sans-serif;          /* Bold text */
-    font-size: 15px;
+  text-decoration: none; /* Remove underline from links */
+  color: #333; /* Dark text color */
+  font-family: Verdana, sans-serif; /* Bold text */
+  font-size: 15px;
 }
 
 .Navdropdown {
-    margin-left: auto;          /* Push the dropdown to the right */
-    background-color: rgb(255, 251, 230);
+  margin-left: auto; /* Push the dropdown to the right */
+  background-color: rgb(255, 251, 230);
 }
 
 .Navdropdown select {
-    padding: 5px;               /* Add padding to the dropdown */
-    border: none;     /* Add border */         /* Rounded corners */
-    cursor: pointer;            /* Change cursor to pointer */
-    background-color: rgb(255, 251, 230);
+  padding: 5px; /* Add padding to the dropdown */
+  border: none; /* Add border */ /* Rounded corners */
+  cursor: pointer; /* Change cursor to pointer */
+  background-color: rgb(255, 251, 230);
 }
+
+/*HOMEDIV1 CSS*/
 
 .homediv1 {
   display: flex; /* Create a flexible row container */
@@ -60,19 +63,19 @@ html {
   gap: 20px; /* Add space between the columns */
   background-color: #007bff;
   margin-left: 30px;
-    margin-right: 30px;
-    margin-top: 30px;
+  margin-right: 30px;
+  margin-top: 30px;
 }
 
 .homediv2 {
-    display: flex; /* Create a flexible row container */
-    justify-content: space-between; /* Add space between columns */
-    align-items: center; /* Align items vertically */
-    gap: 20px; /* Add space between the columns */
-    
-    margin-left: 30px;
-    margin-right: 30px;
-  }
+  display: flex; /* Create a flexible row container */
+  justify-content: space-between; /* Add space between columns */
+  align-items: center; /* Align items vertically */
+  gap: 20px; /* Add space between the columns */
+
+  margin-left: 30px;
+  margin-right: 30px;
+}
 
 .text-box {
   flex: 1; /* Make the text box take up one portion of the space */
@@ -92,20 +95,6 @@ html {
   height: auto; /* Maintain aspect ratio */
 }
 
-.image-box2 {
-    flex: 1; /* Make the image box take up one portion of the space */
-    display: flex; /* Enable flex properties for centering */
-    justify-content: center; /* Center the image horizontally */
-    align-items: center; /* Center the image vertically */
-  }
-  
-  .image-box2 img {
-    margin: 40px;
-    max-width: 60%; /* Scale the image to fit within the box */
-    height: auto; /* Maintain aspect ratio */
-  }
-  
-
 .homediv1h1 {
   color: #ffffff;
   font-size: 50px;
@@ -113,14 +102,6 @@ html {
 .homediv1h2 {
   color: #ffffff;
 }
-
-.homediv2h1 {
-    color: #000000;
-    font-size: 50px;
-  }
-  .homediv2h2 {
-    color: #000000;
-  }
 
 .button1 {
   background-color: #052386; /* Green */
@@ -144,56 +125,86 @@ html {
   font-size: 16px;
 }
 
+/*HOMEDIV2 CSS*/
+
+.homediv2h1 {
+  color: #000000;
+  font-size: 50px;
+  text-align: right;
+}
+.homediv2h2 {
+  color: #000000;
+  text-align: right;
+}
+
+.image-box2 {
+  flex: 1; /* Make the image box take up one portion of the space */
+  display: flex; /* Enable flex properties for centering */
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+}
+
+.image-box2 img {
+  margin-top: 40px;
+  margin-right: 40px;
+  max-width: 60%; /* Scale the image to fit within the box */
+  height: auto; /* Maintain aspect ratio */
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
-    .Navbardiv {
-        flex-direction: column; /* Stack items vertically */
-        align-items: flex-start; /* Align items to the left */
-    }
+  .Navbardiv {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the left */
+  }
 
-    .Navbar {
-        flex-direction: column; /* Stack navbar items vertically */
-        align-items: center; /* Center items */
-    }
+  .Navbar {
+    flex-direction: column; /* Stack navbar items vertically */
+    align-items: center; /* Center items */
+  }
 
-    .Navbar li {
-        margin: 10px 0; /* Adjust spacing for vertical layout */
-    }
+  .Navbar li {
+    margin: 10px 0; /* Adjust spacing for vertical layout */
+  }
 
-    .homediv1 {
-        flex-direction: column; /* Stack text and image boxes vertically */
-        margin: 15px; /* Reduce margin */
-    }
+  .homediv1 {
+    flex-direction: column; /* Stack text and image boxes vertically */
+    margin: 15px; /* Reduce margin */
+  }
 
-    .text-box, .image-box {
-        flex: none; /* Allow boxes to take full width */
-        width: 100%; /* Full width on smaller screens */
-        padding: 10px; /* Reduce padding */
-    }
+  .text-box,
+  .image-box {
+    flex: none; /* Allow boxes to take full width */
+    width: 100%; /* Full width on smaller screens */
+    padding: 10px; /* Reduce padding */
+  }
 
-    .homediv1h1 {
-        font-size: 36px; /* Adjust font size for headings */
-    }
+  .homediv1h1 {
+    font-size: 36px; /* Adjust font size for headings */
+  }
 
-    .button1, .button2 {
-        width: 100%; /* Make buttons full width */
-        padding: 10px; /* Reduce padding for buttons */
-        font-size: 14px; /* Adjust font size for buttons */
-    }
+  .button1,
+  .button2 {
+    width: 100%; /* Make buttons full width */
+    padding: 10px; /* Reduce padding for buttons */
+    font-size: 14px; /* Adjust font size for buttons */
+  }
 }
 
 @media (max-width: 480px) {
-    .homediv1h1 {
-        font-size: 28px; /* Further reduce font size for smaller screens */
-    }
+  .homediv1h1 {
+    font-size: 28px; /* Further reduce font size for smaller screens */
+  }
 
-    .button1, .button2 {
-        padding: 8px; /* Further reduce padding for buttons */
-        font-size: 12px; /* Further adjust font size for buttons */
-    }
+  .button1,
+  .button2 {
+    padding: 8px; /* Further reduce padding for buttons */
+    font-size: 12px; /* Further adjust font size for buttons */
+  }
 }
 
-.footer{
+.footer {
   background-color: #333;
   color: #ffffff;
+  text-align: center;
 }
